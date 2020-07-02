@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+    <link href="form.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+<!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">-->
+
+
+</head>
+
+<body>
+    <div class="page-hearder">
+        <h1 id="title">Restaurant Survey Form</h1>
+    </div>
+    <p id="description">Thank you for taking the time to help us improve the restaurant.</p>
+<!--    <div class="container">-->
+        
+<!--        <div class="jumbotron">-->
+            <div class="bg-img">
+            <form id="survey-form" class="container">
+                <label id="name-label">Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+                <label id="email-label">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your e-mail" required><br><br>
+                <label id="number-label">Age:</label><br>
+                <input type="number" id="number" name="number" min="0" max="100" placeholder="Age" required><br><br>
+
+                <label for="cars">What do you like the most about our restaurant?</label><br>
+                <select id="dropdown" name="dropdown">
+                    <option value="food">Food quality</option>
+                    <option value="clean">Cleanliness</option>
+                    <option value="speed">Speed of service</option>
+                    <option value="accuracy">Order accuracy</option>
+                    <option value="service">Overall service quality</option>
+                </select>
+                <br><br>
+                <p>Would you recommend our restaurant to others?</p>
+                <input type="radio" id="male" name="recommend" value="male">
+                <label for="male">Definitely</label><br>
+                <input type="radio" id="female" name="recommend" value="female">
+                <label for="female">Maybe</label><br>
+                <input type="radio" id="other" name="recommend" value="other">
+                <label for="other">Not sure</label><br>
+                <input type="radio" id="other" name="recommend" value="other">
+                <label for="other">No</label><br><br>
+
+                <p>What would you like to see improved? (Check all that apply)</p>
+                <input type="checkbox" id="chinese" name="" value="chinese">
+                <label for="vehicle1"> Chinese dishes</label><br>
+                <input type="checkbox" id="indian" name="" value="indian">
+                <label for="vehicle2"> Indian dishes</label><br>
+                <input type="checkbox" id="western" name="" value="western">
+                <label for="vehicle3"> Western dishes</label><br>
+                <input type="checkbox" id="japanese" name="" value="japanese">
+                <label for="vehicle3"> Japanese dishes</label><br>
+                <p>Any comments or suggestions?</p>
+                <textarea rows="4" cols="40" name="comment" class="ttt" form="usrform"
+placeholder="Enter your comment here..."></textarea><br>
+                <button type="submit" id="submit" value="Submit" class="btn">Submit</button>
+
+
+            </form>
+            </div>
+<!--        </div>-->
+        
+<!--    </div>-->
+
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</body>
+
+</html>
